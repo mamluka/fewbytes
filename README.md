@@ -26,11 +26,11 @@ Because this is a sandboxed test
 * Not high scale or production grade ready
 * A blackbox
 
-### Redis
+## Redis
 
 Choose redis becuase the pub/sub module is very simple and solid in redis, many client libraries and it's easy to deploy.
 I was not going to develop the pub/sub from scratch, there is no ROI for it
 
-### Ruby for CLI
+## Ruby for CLI
 
 Ruby is fun and easy to work with, it has all the libraries required, was very fast to create what was needed
