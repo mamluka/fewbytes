@@ -10,6 +10,7 @@ Because this is a sandboxed test
 * Logging
 * Deployment script/chef solo type of script
 * Security
+* Some user flows that needs to be in the full product
 
 # Technologies
 
