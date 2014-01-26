@@ -1,0 +1,38 @@
+<head>
+  <title>fewbytes</title>
+</head>
+
+<body>
+  <h1>Add/remove feeds</h1>
+  {{> admin}}
+  <h1>See my items</h1>
+  {{> items}}
+</body>
+
+<template name="admin">
+  <input type="text" class="url"/>
+  <button id="add">Add feed</button>
+  <ul>
+    {{#each feeds}}
+    <li>{{url}}
+      <button class="remove">X</button>
+    </li>
+    {{/each}}
+  </ul>
+</template>
+
+
+<template name="items">
+  {{#each displayFeeds}}
+  <h1>
+    {{url}} - recent 10
+  </h1>
+  <ul>
+    {{#each items}}
+    <Li>{{title}}</Li>
+    {{/each}}
+  </ul>
+  {{/each}}
+</template>
+
+
