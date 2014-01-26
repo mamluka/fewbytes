@@ -1,5 +1,8 @@
 Fewbytes
 ========
+A cool RSS feed reader, check out Meteor power by opening the URL on multiple computers and multiple browsers
+You can also look at this on the smart phone it works quite well
+
 
 # What is missing 
 Because this is a sandboxed test
