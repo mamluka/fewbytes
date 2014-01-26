@@ -60,8 +60,6 @@ mrt install
 # Run CLI
 ```sh
 cd fewbytes/fewbytes-cli
-
 bundle
-
 ./fewbytes-cli debug
 ```
