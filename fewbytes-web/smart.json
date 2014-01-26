@@ -1,6 +1,7 @@
 {
   "packages": {
     "feedparser": {},
-    "redis": {}
+    "redis": {},
+    "bootstrap-3": {}
   }
 }

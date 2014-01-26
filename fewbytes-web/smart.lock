@@ -3,7 +3,8 @@
   "dependencies": {
     "basePackages": {
       "feedparser": {},
-      "redis": {}
+      "redis": {},
+      "bootstrap-3": {}
     },
     "packages": {
       "feedparser": {
@@ -15,6 +16,11 @@
         "git": "https://github.com/stevemanuel/meteor-redis.git",
         "tag": "v0.1.3",
         "commit": "8af9aaab84f4a87358ccb4616592a373661f712b"
+      },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v0.3.7",
+        "commit": "5dd0d142c870647b910be80bc777b96f0dd45e5e"
       }
     }
   }

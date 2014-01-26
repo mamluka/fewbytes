@@ -3,22 +3,52 @@
 </head>
 
 <body>
-  <h1>Add/remove feeds</h1>
-  {{> admin}}
-  <h1>See my items</h1>
-  {{> items}}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Add/remove feeds</h1>
+      </div>
+      <div class="col-lg-12">
+        {{> admin}}
+      </div>
+      <div class="col-lg-12">
+        <h1>See my items</h1>
+      </div>
+      <div class="col-lg-12">
+        {{> items}}
+      </div>
+    </div>
+  </div>
 </body>
 
 <template name="admin">
-  <input type="text" class="url"/>
-  <button id="add">Add feed</button>
-  <ul>
-    {{#each feeds}}
-    <li>{{url}}
-      <button class="remove">X</button>
-    </li>
-    {{/each}}
-  </ul>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input type="text" class="form-control" id="url">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="add">Add Feed</button>
+      </span>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <ul class="list-group">
+        {{#each feeds}}
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-lg-11"><h4>{{url}}</h4></div>
+            <div class="col-lg-1">
+              <button class="btn btn-sm btn-default btn-danger remove"><i class="glyphicon glyphicon-minus-sign"></i></button>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
 </template>
 
 
@@ -27,11 +57,22 @@
   <h1>
     {{url}} - recent 10
   </h1>
-  <ul>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <td>Title</td>
+      <td>Published At</td>
+      <td>Discovered At</td>
+    </tr>
+    </thead>
     {{#each items}}
-    <Li>{{title}}</Li>
+    <tr>
+      <td>{{title}}</td>
+      <td>{{date}}</td>
+      <td>{{discoveredAt}}</td>
+    </tr>
     {{/each}}
-  </ul>
+  </table>
   {{/each}}
 </template>
 

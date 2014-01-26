@@ -35,10 +35,9 @@ Meteor.setInterval(function () {
 }, 5000);
 
 redisClient = redis.createClient();
-
 items.find().observe({
     added: function (x) {
-        var jsonString = JSON.stringify({title: x.title, date: x.date, feedId: x.feedId});
+        var jsonString = JSON.stringify({title: x.title, date: x.date, feedId: x.feedId, discoveredAt: x.discoveredAt});
         redisClient.publish('items', jsonString);
     }
 });

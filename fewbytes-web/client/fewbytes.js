@@ -7,7 +7,7 @@ Template.admin.feeds = function () {
 
 Template.admin.events({
     'click #add': function (e, t) {
-        feeds.insert({url: t.find('.url').value});
+        feeds.insert({url: t.find('#url').value});
     },
     'click .remove': function () {
         feeds.remove(this._id);
