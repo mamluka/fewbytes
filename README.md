@@ -34,3 +34,21 @@ I was not going to develop the pub/sub from scratch, there is no ROI for it
 ## Ruby for CLI
 
 Ruby is fun and easy to work with, it has all the libraries required, was very fast to create what was needed
+
+# Run locally
+
+* Start redis-server
+* Install Meteor CLI by running
+
+`$ curl https://install.meteor.com/ | sh`
+
+* Install meteor packages by
+
+`sudo -H npm install -g meteorite #installing meteorite nodejs module`
+`cd fewbytes`
+
+
+* Go to the product folder and type
+
+`meteor`
+    
