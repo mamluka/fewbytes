@@ -38,10 +38,9 @@ Ruby is fun and easy to work with, it has all the libraries required, was very f
 
 # Run locally
 
-* Intall Redis
+* Install Redis
 * Install Nodejs
 * Install Meteor CLI by running
-* Start redis-server
 
 `$ curl https://install.meteor.com/ | sh`
 
@@ -53,7 +52,7 @@ cd fewbytes/fewbytes-web
 mrt install
 ```
 
-
+* Start redis-server
 * Go to the product folder and type
 
 `meteor`
