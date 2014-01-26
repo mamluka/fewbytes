@@ -38,18 +38,28 @@ Ruby is fun and easy to work with, it has all the libraries required, was very f
 
 # Run locally
 
-* Start redis-server
+* Intall Redis
+* Install Nodejs
 * Install Meteor CLI by running
+* Start redis-server
 
 `$ curl https://install.meteor.com/ | sh`
 
 * Install meteor packages by
 
-`sudo -H npm install -g meteorite #installing meteorite nodejs module`
-`cd fewbytes`
+```sh
+sudo -H npm install -g meteorite #installing meteorite nodejs module
+cd fewbytes/fewbytes-web
+mrt install
+```
 
 
 * Go to the product folder and type
 
 `meteor`
     
+# Run CLI
+```sh
+cd fewbytes/fewbytes-cli
+./fewbytes-cli debug
+```
