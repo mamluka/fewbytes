@@ -9,6 +9,7 @@ Because this is a sandboxed test
 * Nice UI
 * Logging
 * Deployment script/chef solo type of script
+* Security
 
 # Technologies
 
